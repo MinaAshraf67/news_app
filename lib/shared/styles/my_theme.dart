@@ -6,10 +6,12 @@ class MyThemeData {
   static ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: MyColors.backgroundLight,
     textTheme: TextTheme(
-        bodySmall: AppTextStyleLightTheme.bodySmall,
-        bodyMedium: AppTextStyleLightTheme.bodyMedium,
-        bodyLarge: AppTextStyleLightTheme.bodyLarage,
-        labelSmall: AppTextStyleLightTheme.labelSmall),
+      bodySmall: AppTextStyleDarkTheme.bodySmall,
+      bodyMedium: AppTextStyleDarkTheme.bodyMedium,
+      bodyLarge: AppTextStyleDarkTheme.bodyLarage,
+      headlineMedium: AppTextStyleLightTheme.headLineMeduim,
+      headlineLarge: AppTextStyleLightTheme.headLineLarge,
+    ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: MyColors.whiteColor,
       selectedItemColor: MyColors.primaryColor,
@@ -23,10 +25,12 @@ class MyThemeData {
   static ThemeData darkTheme = ThemeData(
     scaffoldBackgroundColor: MyColors.backgroundDark,
     textTheme: TextTheme(
-        bodySmall: AppTextStyleDarkTheme.bodySmall,
-        bodyMedium: AppTextStyleDarkTheme.bodyMedium,
-        bodyLarge: AppTextStyleDarkTheme.bodyLarage,
-        labelSmall: AppTextStyleDarkTheme.labelSmall),
+      bodySmall: AppTextStyleDarkTheme.bodySmall,
+      bodyMedium: AppTextStyleDarkTheme.bodyMedium,
+      bodyLarge: AppTextStyleDarkTheme.bodyLarage,
+      headlineMedium: AppTextStyleLightTheme.headLineMeduim,
+      headlineLarge: AppTextStyleLightTheme.headLineLarge,
+    ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: MyColors.onbackgroundDark,
       selectedItemColor: MyColors.primaryColor,
