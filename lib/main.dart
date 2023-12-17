@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/layout/home/home_layout.dart';
+import 'package:news_app/shared/styles/my_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        initialRoute: HomeLayout.routeName,
-        routes: {
-          HomeLayout.routeName: (context) => const HomeLayout(),
-        });
+      debugShowCheckedModeBanner: false,
+      initialRoute: HomeLayout.routeName,
+      routes: {
+        HomeLayout.routeName: (context) => const HomeLayout(),
+      },
+      themeMode: ThemeMode.light,
+      theme: MyThemeData.lightTheme,
+      darkTheme: MyThemeData.darkTheme,
+    );
   }
 }
