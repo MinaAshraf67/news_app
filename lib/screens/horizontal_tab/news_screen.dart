@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/sourceResponse.dart';
+import 'package:news_app/screens/horizontal_tab/news_card_item.dart';
 import 'package:news_app/screens/horizontal_tab/source_item.dart';
 import 'package:news_app/shared/network/remote/api_manager.dart';
 import 'package:news_app/shared/styles/colors.dart';
@@ -63,12 +64,7 @@ class _NewsScreenState extends State<NewsScreen> {
               return Expanded(
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Text(
-                      newsList[index].title ?? "",
-                      style: const TextStyle(
-                        color: Colors.black,
-                      ),
-                    );
+                    return NewsCardItem(newsList[index]);
                   },
                   itemCount: newsList.length,
                 ),

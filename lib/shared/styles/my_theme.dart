@@ -26,9 +26,9 @@ class MyThemeData {
     ),
     scaffoldBackgroundColor: AppColors.transparentColor,
     textTheme: TextTheme(
-      bodySmall: AppTextStyleDarkTheme.bodySmall,
-      bodyMedium: AppTextStyleDarkTheme.bodyMedium,
-      bodyLarge: AppTextStyleDarkTheme.bodyLarage,
+      bodySmall: AppTextStyleLightTheme.bodySmall,
+      bodyMedium: AppTextStyleLightTheme.bodyMedium,
+      bodyLarge: AppTextStyleLightTheme.bodyLarage,
       headlineMedium: AppTextStyleLightTheme.headLineMeduim,
       headlineLarge: AppTextStyleLightTheme.headLineLarge,
     ),
